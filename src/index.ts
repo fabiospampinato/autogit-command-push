@@ -13,7 +13,7 @@ type options = {
 function pull ( customOptions?: Partial<options> ) {
 
   return {
-    description: 'A command for pushing to a remote.',
+    description: 'Push to the remote',
     plugins: [
       pushPlugin ( customOptions )
     ]
