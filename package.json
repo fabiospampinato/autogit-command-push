@@ -1,0 +1,40 @@
+{
+  "name": "autogit-command-push",
+  "description": "A command for pushing to a remote.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "lint": "tslint \"src/**/*.ts*\" --force",
+    "prepublish": "npm run clean && npm run lint && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/autogit-command-push/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/autogit-command-push.git"
+  },
+  "keywords": [
+    "autogit",
+    "command",
+    "push"
+  ],
+  "dependencies": {
+    "autogit-plugin-push": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "^3.0.3"
+  }
+}
